@@ -1,0 +1,15 @@
+{
+    "Starships": {
+        "Keys": [
+            {
+                "ShipClass" : { "S" : "Excelsior" },
+                "Registry" : { "S" : "NCC-13958" }
+            },
+            {
+                "ShipClass" : { "S" : "Miranda" },
+                "Registry" : { "S" : "NCC-1864" }
+            }
+
+        ]
+    }
+}

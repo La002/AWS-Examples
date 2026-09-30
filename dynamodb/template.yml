@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  DynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      # TableName: my-table 
+      TableClass: STANDARD
+      BillingMode: PROVISIONED
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      KeySchema: 
+        - AttributeName: pk
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S  
+        - AttributeName: sk 
+          AttributeType: S
+        - AttributeName: fruit
+          AttributeType: S
+        - AttributeName: vegetable
+          AttributeType: S
+
+      
+      
+      
